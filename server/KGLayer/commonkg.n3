@@ -1,0 +1,4 @@
+@prefix ns1: <http://aimicroservice.derby.ac.uk/> .
+
+ns1:d13b71d5-0103-45c2-aa28-e4af518b1ca8 ns1:selectedfeatures "sex.cp.thalach.exang.oldpeak.slope.ca.thal"@en .
+

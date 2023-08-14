@@ -1,0 +1,31 @@
+@prefix ns1: <http://aimicroservice.derby.ac.uk/> .
+
+ns1:d13b71d5-0103-45c2-aa28-e4af518b1ca8 a ns1:task ;
+    ns1:context ns1:9b94bd51-ccee-4ab5-be22-099032aed55b ;
+    ns1:desire_output [ ns1:iodatatype ns1:pipeline ] ;
+    ns1:domain "medical"@en ;
+    ns1:input [ ns1:iodatatype ns1:csv ] .
+
+ns1:9b94bd51-ccee-4ab5-be22-099032aed55b ns1:desire_output [ ns1:iodatatype ns1:pipeline ] ;
+    ns1:domain ns1:medical ;
+    ns1:input_data ns1:heart ;
+    ns1:purpose ns1:MLmodel_classification .
+
+ns1:heart ns1:data_type ns1:csv ;
+    ns1:feature_number "14"@en ;
+    ns1:feature_type <http://aimicroservice.derby.ac.uk/feature/age>,
+        <http://aimicroservice.derby.ac.uk/feature/ca>,
+        <http://aimicroservice.derby.ac.uk/feature/chol>,
+        <http://aimicroservice.derby.ac.uk/feature/cp>,
+        <http://aimicroservice.derby.ac.uk/feature/exang>,
+        <http://aimicroservice.derby.ac.uk/feature/fbs>,
+        <http://aimicroservice.derby.ac.uk/feature/oldpeak>,
+        <http://aimicroservice.derby.ac.uk/feature/restecg>,
+        <http://aimicroservice.derby.ac.uk/feature/sex>,
+        <http://aimicroservice.derby.ac.uk/feature/slope>,
+        <http://aimicroservice.derby.ac.uk/feature/target>,
+        <http://aimicroservice.derby.ac.uk/feature/thal>,
+        <http://aimicroservice.derby.ac.uk/feature/thalach>,
+        <http://aimicroservice.derby.ac.uk/feature/trestbps> ;
+    ns1:record_nubmer "303"@en .
+
